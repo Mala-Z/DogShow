@@ -1,0 +1,158 @@
+<!--Calling carousel component through selector-->
+<carousel> </carousel>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <!--Information-->
+    <!--Calling the information component through selector -->
+    <information></information>
+  </div>
+</div>
+<!--Begin Form-->
+<form [formGroup]="myForm" >
+
+  <div class="row" >
+    <div class="col-sm-6">
+      <!--FirstName // Validator-->
+      <div class="form-group" [ngClass]="{'has-error': !myForm.controls['firstName'].valid && myForm.controls['firstName'].touched}">
+        <label id="fN">First Name</label>
+        <div class="input-group">
+          <input class="form-control" type="text" formControlName="firstName" placeholder="First Name">
+        </div>
+        <div *ngIf="myForm.controls['firstName'].hasError('required')&&myForm.controls['firstName'].touched" class="alert-danger">You must include First Name</div>
+      </div>
+    </div>
+    <!--LastName // Validator-->
+    <div class="col-sm-6">
+      <div class="form-group " [ngClass]="{'has-error': !myForm.controls['lastName'].valid && myForm.controls['lastName'].touched}">
+        <label>Last Name</label>
+        <div class="input-group">
+          <input class="form-control" type="text" formControlName="lastName" placeholder="Last Name">
+        </div>
+        <div *ngIf="myForm.controls['lastName'].hasError('required')&&myForm.controls['lastName'].touched" class="alert-danger">You must include Last Name</div>
+      </div>
+    </div>
+  </div>
+  <!--Country // Validator-->
+  <div class="row" >
+    <div class="col-sm-6">
+      <label>Country</label>
+    </div>
+    <div class="col-sm-3">
+      <select  formControlName="selectedCountry" (ngModelChange)="printOutCountry($event)" style="width: 180px" >
+        <option selected="Select Country" >Select Country</option>
+        <option *ngFor="let country of countries" [ngValue]="country"   > {{country}} </option>
+      </select>
+    </div>
+  </div>
+<div></div>
+  <!--Address // Validator-->
+  <label style="font-size: larger"> Address</label>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="form-group" [ngClass]="{'has-error': !myForm.controls['street'].valid && myForm.controls['street'].touched}">
+        <label>Street</label>
+        <div class="input-group">
+          <input class="form-control" type="text" formControlName="street" placeholder="street">
+        </div>
+        <div *ngIf="myForm.controls['street'].hasError('required')&&myForm.controls['street'].touched" class="alert-danger">You must include a street</div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="form-group" [ngClass]="{'has-error': !myForm.controls['city'].valid && myForm.controls['city'].touched}">
+        <label>City</label>
+        <div class="input-group">
+          <input class="form-control" type="text" formControlName="city" placeholder="city">
+        </div>
+        <div *ngIf="myForm.controls['city'].hasError('required')&&myForm.controls['city'].touched" class="alert-danger">You must include a city</div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="form-group" [ngClass]="{'has-error': !myForm.controls['zipCode'].valid && myForm.controls['zipCode'].touched}">
+        <label>Zip Code</label>
+        <div class="input-group">
+          <input class="form-control" type="text" formControlName="zipCode" placeholder="zipCode">
+        </div>
+        <div *ngIf="myForm.controls['zipCode'].hasError('required')&&myForm.controls['zipCode'].touched" class="alert-danger">You must include a Zip Code</div>
+      </div>
+    </div>
+  </div>
+  <!--Email // Validator-->
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="form-group" [ngClass]="{'has-error': !myForm.controls['email'].valid && myForm.controls['email'].touched}">
+        <label>E-mail</label>
+        <div class="input-group">
+          <input class="form-control" type="text" formControlName="email" placeholder="email">
+        </div>
+        <div *ngIf="myForm.controls['email'].hasError('required')&&myForm.controls['email'].touched" class="alert-danger">You must include a valid email</div>
+      </div>
+    </div>
+    <!--Email // Validator-->
+    <div class="col-sm-6">
+      <div class="form-group" [ngClass]="{'has-error': !myForm.controls['phoneNumber'].valid && myForm.controls['phoneNumber'].touched}">
+        <label>Phone Number</label>
+        <div class="input-group">
+          <input class="form-control" type="text" formControlName="phoneNumber" placeholder="phone number">
+        </div>
+        <div *ngIf="myForm.controls['phoneNumber'].hasError('required')&&myForm.controls['phoneNumber'].touched" class="alert-danger">You must include a valid Phone Number</div>
+      </div>
+    </div>
+  </div>
+
+<!--Gender-->
+  <div class="form-group" [ngClass]="{'has-error': !myForm.controls['gender'].valid && myForm.controls['gender'].touched}">
+    <label>Gender</label>
+    <div data-toggle="buttons" >
+      <label><input class="form-control" type="radio" formControlName="gender" name="gender" value="male" placeholder="male">male</label>
+      <label><input class="form-control" type="radio" formControlName="gender" name="gender" value="female" placeholder="female">female</label>
+    </div>
+
+    <div *ngIf="myForm.controls['gender'].hasError('required')&&myForm.controls['gender'].touched" class="alert-danger">You must select a gender</div>
+  </div>
+
+<!--Skills-->
+  <label>Skills</label>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="form-group" [ngClass]="{'has-error': !myForm.controls['dogTrainer'].valid && myForm.controls['dogTrainer'].touched}">
+        <div class="input-group" >
+        <label>Dog Trainer</label>
+          <input class="form-control" type="checkbox" formControlName="dogTrainer" placeholder="dogTrainer">
+        </div>
+        <div *ngIf="myForm.controls['dogTrainer'].hasError('required')&&myForm.controls['dogTrainer'].touched" class="alert-danger">You must click</div>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="form-group" [ngClass]="{'has-error': !myForm.controls['dogGroomer'].valid && myForm.controls['dogGroomer'].touched}">
+        <div class="input-group">
+        <label>Dog Groomer</label>
+          <input class="form-control" type="checkbox" formControlName="dogGroomer" placeholder="dogGroomer">
+        </div>
+        <div *ngIf="myForm.controls['dogGroomer'].hasError('required')&&myForm.controls['dogGroomer'].touched" class="alert-danger">You must click</div>
+      </div>
+    </div>
+  </div>
+
+  <!--textField-->
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="form-group"
+           [ngClass]="{'has-error': !myForm.controls['textfield'].valid && myForm.controls['textfield'].touched}">
+        <div class="input-group">
+
+          <label for="comment">Comments and other relevant experience:</label>
+          <textarea class="form-control" rows="5" formControlName="textfield" id="comment"></textarea>
+        </div>
+        <div *ngIf="myForm.controls['textfield'].hasError('required')&&myForm.controls['textfield'].touched"
+             class="alert-danger">You must click
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <button class="btn btn-sm btn-primary" type="submit" (click)="addInfo(myForm.value)" [disabled]="!myForm.valid">Join Now</button>
+
+</form>
+<iframe width="854" height="480" src="https://www.youtube.com/embed/CINpWYMb5O0" frameborder="0" allowfullscreen></iframe>

@@ -1,0 +1,35 @@
+<!--Nav-->
+<body>
+<div class="col-lg-12 jumbotron">
+  <nav class="navbar navbar-default navbar-fixed-top navbar-dark bg-inverse">
+    <div class="container">
+
+      <ul class="nav navbar-nav" routerLinkeActive="active">
+        <li class="nav-item"><a class="nav-link" routerLink="home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="about">About</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="volunteer">Volunteer</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+
+<div class="container">
+  <div class="jumbotron" id="jumbo">
+    <div style="text-align:center">
+      <h1> Staffy Dog Show</h1>
+      <h2>Become a volunteer</h2>
+    </div>
+  </div>
+  <div></div>
+
+  <router-outlet></router-outlet>
+</div>
+<div class="panel panel-primary">
+  <footer class="panel-heading" id="footer"> Copyright &copy; M</footer>
+</div>
+<div style="text-align:center"></div>
+</body>
+
+

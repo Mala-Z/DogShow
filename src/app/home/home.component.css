@@ -1,0 +1,14 @@
+label{
+  color: white;
+
+}
+input{
+  background-color: black;
+  border-bottom: groove;
+  border-color: black;
+  border-bottom-color: gray;
+}
+.alert-danger{
+ color: hotpink;
+  margin-right: 230px;
+}
