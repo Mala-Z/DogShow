@@ -62,11 +62,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Developer guide: getting your environment set up
 
-1. Make sure you have node installed with ltest version
+1. Make sure you have node installed with latest version
 
 2. Run npm install -g
 
-3. Fork the angular/material2 repo
 
 
 ## Development server
