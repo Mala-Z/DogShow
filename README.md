@@ -2,9 +2,6 @@
 # DogShow
 Volunteer form
 =======
-
-
-
 # Description 
 DogShowApp
 
@@ -21,16 +18,24 @@ Most of the requirements asked for this task are on the main “home” page.
     Text Field
     Proper Form Validation
     “Join Now” button
+
 “About” page
     Short description of the dog breed
     Information about where the even takes place
     Map of where the event will be held 
+
 “Volunteer” page
     Similar to ‘Home” page
     Form to become a volunteer
+
 “Contact Us” page
     Form to submit information and comments
 
+Support
+-------
+
+If you are having issues, please let us know.
+We have a mailing list located at: project@google-groups.com
 
 
 # VolunteerApp
