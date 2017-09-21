@@ -1,6 +1,6 @@
 
 # DogShow
-Volunteer form
+##Volunteer form
 =======
 # Description 
 DogShowApp
@@ -8,6 +8,7 @@ DogShowApp
 Objective: to build a website where people can volunteer to work at an event
 
 Most of the requirements asked for this task are on the main “home” page.
+
 “Home” page
     A navigation menu
     Image Slider with pictures of the “event”
@@ -31,11 +32,27 @@ Most of the requirements asked for this task are on the main “home” page.
 “Contact Us” page
     Form to submit information and comments
 
+## Frameworks
+
+Angular2
+JQuery
+Bootstrap
+
+## Dependency Management
+
+NPM
+
+## Libraries
+tether
+Client-side library to absolutely positioned elements attach to elements in the page
+jquery-3.1.1.slim.min.js
+Web content binding
+
 Support
 -------
 
-If you are having issues, please let us know.
-We have a mailing list located at: project@google-groups.com
+If you are having issues, please let me know.
+
 
 
 # VolunteerApp
