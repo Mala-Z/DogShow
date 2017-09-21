@@ -60,6 +60,15 @@ If you are having issues, please let me know.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.2.
 
+## Developer guide: getting your environment set up
+
+1. Make sure you have node installed with ltest version
+
+2. Run npm install -g
+
+3. Fork the angular/material2 repo
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -84,3 +93,15 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Running tests
+
+Not yet implemented
+
+## Running benchmarks
+
+Not yet implemented.
+
+## Running screenshot diff tests.
+
+Not yet implemented.
