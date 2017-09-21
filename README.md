@@ -1,7 +1,38 @@
-<<<<<<< HEAD
+
 # DogShow
 Volunteer form
 =======
+
+
+
+# Description 
+DogShowApp
+
+Objective: to build a website where people can volunteer to work at an event
+
+Most of the requirements asked for this task are on the main “home” page.
+“Home” page
+    A navigation menu
+    Image Slider with pictures of the “event”
+    Introduction of event
+    Form which can pass values to console
+    Radio buttons
+    Check Boxes
+    Text Field
+    Proper Form Validation
+    “Join Now” button
+“About” page
+    Short description of the dog breed
+    Information about where the even takes place
+    Map of where the event will be held 
+“Volunteer” page
+    Similar to ‘Home” page
+    Form to become a volunteer
+“Contact Us” page
+    Form to submit information and comments
+
+
+
 # VolunteerApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.2.
@@ -30,4 +61,3 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
->>>>>>> First commit
