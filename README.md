@@ -1,6 +1,6 @@
 
 # DogShow
-##Volunteer form
+## Volunteer form
 =======
 # Description 
 DogShowApp
@@ -9,7 +9,7 @@ Objective: to build a website where people can volunteer to work at an event
 
 Most of the requirements asked for this task are on the main “home” page.
 
-“Home” page
+“Home” page:
     A navigation menu
     Image Slider with pictures of the “event”
     Introduction of event
@@ -20,16 +20,16 @@ Most of the requirements asked for this task are on the main “home” page.
     Proper Form Validation
     “Join Now” button
 
-“About” page
+“About” page:
     Short description of the dog breed
     Information about where the even takes place
     Map of where the event will be held 
 
-“Volunteer” page
+“Volunteer” page:
     Similar to ‘Home” page
     Form to become a volunteer
 
-“Contact Us” page
+“Contact Us” page:
     Form to submit information and comments
 
 ## Frameworks
@@ -43,9 +43,10 @@ Bootstrap
 NPM
 
 ## Libraries
-tether
+tether:
 Client-side library to absolutely positioned elements attach to elements in the page
-jquery-3.1.1.slim.min.js
+
+jquery-3.1.1.slim.min.js:
 Web content binding
 
 Support
